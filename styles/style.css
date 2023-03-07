@@ -160,6 +160,12 @@ main {
     text-align: center;
 }
 
+.poems {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
 .poem {
     margin: 0;
     font-size: 24px;
