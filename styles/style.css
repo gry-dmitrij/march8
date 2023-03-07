@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #5D503C;
     background-color: #FFF7EB;
-    background-image: url('/images/eight-decor.svg');
+    background-image: url('../images/eight-decor.svg');
     background-size: 970px 1540px;
     background-position: center top -140px;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ main {
 
 @media (max-width: 600px) {
     body {
-        background-image: url('/images/eight-decor.svg');
+        background-image: url('../images/eight-decor.svg');
         background-size: 654px 1038px;
         background-position: center top -20px;
     }
