@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #5D503C;
+    background-color: #FFF7EB;
+    background-image: url('/images/eight-decor.svg');
+    background-size: 970px 1540px;
+    background-position: center top -140px;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.header {
+    padding: 96px 20px 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 318px;
+    max-width: calc(100% - 20px);
+}
+
+.firstPage {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.eight-image {
+    width: 262px;
+    margin-bottom: 20px;
+}
+
+.decorate {
+    position: relative;
+}
+
+.decorate::before {
+    content: "";
+    position: absolute;
+}
+
+.decorate--line::before {
+    height: 1px;
+    width: calc(100% + 60px);
+    bottom: -30px;
+    left: -30px;
+    background: #ebdfcb;
+}
+
+.decorate--circle::before {
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ebdfcb;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.text {
+    max-width: 90%;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.text--b {
+    font-weight: 600;
+}
+
+.down {
+    margin-top: auto;
+    margin-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'LavanderiaC', serif;
+    text-align: center;
+}
+
+.title--big {
+    font-size: 96px;
+    line-height: 173px;
+}
+
+.names {
+    margin: 0 0 200px;
+    padding: 0;
+    max-width: 960px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.name {
+    margin: 0 30px 48px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.name .main {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.border {
+    margin: 250px 20px 80px;
+    padding: 96px;
+    border: 10px solid #EBDFCB;
+    border-radius: 48px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.03);
+    background-image: url("/images/bg.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.border__box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    background: #FFF7EB;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.75);
+    border-radius: 24px;
+}
+
+.border__title {
+    margin: 0 0 30px;
+    font-family: 'LavanderiaC', serif;
+    font-size: 54px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.poem {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.poem--last {
+    margin-bottom: 20px;
+}
+
+.sign {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('/images/eight-decor.svg');
+        background-size: 654px 1038px;
+        background-position: center top -20px;
+    }
+
+    .header {
+        padding: 48px 0;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eight-image {
+        width: 184px;
+    }
+
+    .title--big {
+        font-size: 56px;
+    }
+
+    .names {
+        margin: 0 0 100px;
+    }
+
+    .name {
+        font-size: 12px;
+    }
+
+    .name .main {
+        font-size: 16px;
+    }
+
+    .border {
+        margin: 140px 0 40px;
+        padding: 48px 20px;
+    }
+
+    .border__box {
+        padding: 16px;
+    }
+
+    .border__title {
+        font-size: 24px;
+        line-height: 43px;
+    }
+
+    .poem {
+        font-size: 16px;
+    }
+
+    .sign {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
